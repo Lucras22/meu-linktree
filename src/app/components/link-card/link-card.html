@@ -1,0 +1,18 @@
+<div class="card-container">
+  <div class="card-header" (click)="clickCard.emit()">
+    <i class="bi bi-play-circle-fill"></i>
+    <span>{{ item.title }}</span>
+    <i class="bi" [ngClass]="isOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+  </div>
+
+  @if (isOpen) {
+    <div class="video-body">
+      <iframe 
+        [src]="getSafeUrl(item.youtubeId)" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  }
+</div>

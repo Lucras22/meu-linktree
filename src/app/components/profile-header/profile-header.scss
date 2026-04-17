@@ -1,0 +1,41 @@
+.header {
+  text-align: center;
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, #00ff88, #00bd68);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.5px;
+    color: #fff;
+  }
+
+  p {
+    color: #00ff88;
+    font-family: 'JetBrains Mono', monospace; // Fonte de código
+    font-size: 0.9rem;
+    margin-top: 5px;
+    opacity: 0.9;
+  }
+
+  .genesis-link {
+    display: inline-block;
+    margin-top: 15px;
+    img {
+      height: 25px;
+      filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+      transition: 0.3s;
+      &:hover { transform: scale(1.1); filter: brightness(1.2); }
+    }
+  }
+}
