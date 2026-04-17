@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { ProfileHeader } from './components/profile-header/profile-header';
 import { SocialLinks } from './components/social-links/social-links';
 import { LinkCardComponent } from './components/link-card/link-card';
+import { PortfolioCard } from './components/portfolio-card/portfolio-card';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, ProfileHeader, SocialLinks, LinkCardComponent],
+  imports: [CommonModule, ProfileHeader, SocialLinks, LinkCardComponent, PortfolioCard],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
