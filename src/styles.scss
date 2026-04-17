@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  background-image: 
+    linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px; // Cria a grade tecnológica
+  color: #e0e0e0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.main-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
